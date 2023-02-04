@@ -22,7 +22,7 @@ jobs:
             python main.py
           
           env: 
-             CONSUMER_KEY : ${{ CONSUMER_KEY }}
+             CONSUMER_KEY : ${{ secretes.CONSUMER_KEY }}
              CONSUMER_SECRET_KEY: ${{ secrets.CONSUMER_SECRET }}
              ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
              ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
