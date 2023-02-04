@@ -15,6 +15,7 @@ import tweepy
 import credentials
 import time
 import sys
+import os
 from os import environ
 
 
