@@ -9,7 +9,6 @@ Created on Mon Jan 30 23:16:21 2023
 from dotenv import load_dotenv
 load_dotenv()
 import json
-import json
 import random
 import tweepy
 import credentials
