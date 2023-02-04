@@ -11,7 +11,6 @@ load_dotenv()
 import json
 import random
 import tweepy
-import credentials
 import time
 import sys
 import os
