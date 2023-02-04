@@ -26,11 +26,10 @@ access_token1 = credentials.ACCESS_TOKEN
 access_token_secret1 = credentials.ACCESS_TOKEN_SECRET
 """
 
-
-consumer_key1 = os.getenviron('CONSUMER_KEY')
-consumer_secret_key1 = os.getenviron('CONSUMER_SECRET_KEY')
-access_token1 = os.getenviron('ACCESS_TOKEN')
-access_token_secret1 = os.getenviron('ACCESS_TOKEN_SECRET')
+consumer_key1 = os.getenv('CONSUMER_KEY')
+consumer_secret_key1 = os.getenv('CONSUMER_SECRET')
+access_token1 = os.getenv('ACCESS_TOKEN')
+access_token_secret1 = os.getenv('ACCESS_TOKEN_SECRET')
 
 
 def get_quotes():
