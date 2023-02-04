@@ -1,0 +1,29 @@
+name: Send Daily SMS
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  
+jobs: 
+    daily_sms:
+      runs-on: ubuntu-latest
+      steps: 
+        - name: Setup Python
+          uses: actions/setup-python@v3
+          with:
+            python-version: '3.9'
+
+        - name: Checkout
+          uses: actions/checkout@v3
+
+        - name: Send SMS
+          run: |
+            echo $(pip --version)
+            pip install tweepy
+            pip install python-dotenv
+            python main.py
+          env: 
+             CONSUMER_KEY : ${{ CONSUMER_KEY }}
+             CONSUMER_SECRET_KEY: ${{ secrets.CONSUMER_SECRET }}
+             ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+             ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
