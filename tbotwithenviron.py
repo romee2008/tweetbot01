@@ -18,25 +18,20 @@ import sys
 from os import environ
 
 
-"""
-consumer_key1 = 'o6bF5T5It9WtHjGTVbR1zmbB1'
-consumer_secret_key1 = 'uDEcRuOemqjQwaiB5pHy0aobtJNjiCq6ztHLDhpY1i54Pzv1AA'
-access_token1 = '871329457595744256-Tb9ijBkXGIaqsDNcXZorqxGv9ID8mkU'
-access_token_secret1 = 'HNg93RFiC2g5b50gux5aeZpTJltEv8c37T6K4CfKfmzWR'
-"""
 
+""""
 consumer_key1 = credentials.CONSUMER_KEY
 consumer_secret_key1 = credentials.CONSUMER_SECRET_KEY
 access_token1 = credentials.ACCESS_TOKEN
 access_token_secret1 = credentials.ACCESS_TOKEN_SECRET
+"""
 
 
-"""
-consumer_key1 = environ['CONSUMER_KEY']
-consumer_secret_key1 = environ['CONSUMER_SECRET_KEY']
-access_token1 = environ['ACCESS_TOKEN']
-access_token_secret1 = environ['ACCESS_TOKEN_SECRET']
-"""
+consumer_key1 = os.getenviron('CONSUMER_KEY')
+consumer_secret_key1 = os.getenviron('CONSUMER_SECRET_KEY')
+access_token1 = os.getenviron('ACCESS_TOKEN')
+access_token_secret1 = os.getenviron('ACCESS_TOKEN_SECRET')
+
 
 def get_quotes():
     with open('quotes1.json',encoding=('UTF-8')) as f:
