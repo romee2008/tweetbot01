@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jan 30 17:17:13 2023
+
+@author: aamir
+"""
+"""
+client = tweepy.Client("AAAAAAAAAAAAAAAAAAAAAKcclgEAAAAAbqMZDgoix7iJTThGSxZWewYIwI0%3DN8SCIugKuafGfEqDpeV0RAqsiQaD1oNfszuhvmKbOSzlVwv8Jf")
+"""
+
+CONSUMER_KEY= 'o6bF5T5It9WtHjGTVbR1zmbB1'
+CONSUMER_SECRET_KEY='uDEcRuOemqjQwaiB5pHy0aobtJNjiCq6ztHLDhpY1i54Pzv1AA'
+ACCESS_TOKEN='871329457595744256-Tb9ijBkXGIaqsDNcXZorqxGv9ID8mkU'
+ACCESS_TOKEN_SECRET='HNg93RFiC2g5b50gux5aeZpTJltEv8c37T6K4CfKfmzWR'
