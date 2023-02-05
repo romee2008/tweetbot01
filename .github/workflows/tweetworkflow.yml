@@ -3,7 +3,7 @@ name: Send Daily Tweet
 on:
   schedule:
 
-    - cron: '*/15 * * * *'
+    - cron: '1 6 1 1-12 *'
   
 jobs: 
     daily_tweet:
