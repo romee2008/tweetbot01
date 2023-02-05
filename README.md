@@ -15,5 +15,5 @@ Github Workflow Setup
 
 1. Push the repository
 2. Set Repository Secrets . Consumer_key, Consumer_Secret, Access_Token Acces_Token_secret
-2. Create a yml file in github workflow and paste the yml file code in your file.
+2. Create a yml file in github workflow and paste the tweetworkflow.yml file code in your yml file.
 4. Done !!!!
