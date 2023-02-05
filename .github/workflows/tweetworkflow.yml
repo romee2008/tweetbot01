@@ -2,7 +2,7 @@ name: Send Daily Tweet
 
 on:
   schedule:
-  # At 22:00 on every day-of-week from Monday through Friday
+
     - cron: '*/15 * * * *'
   
 jobs: 
