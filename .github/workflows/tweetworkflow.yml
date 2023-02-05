@@ -1,4 +1,4 @@
-name: Send Daily SMS
+name: Send Daily Tweet
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
     - cron: '15 17 * * *'
   
 jobs: 
-    daily_sms:
+    daily_tweet:
       runs-on: ubuntu-latest
       steps: 
         - name: Setup Python
@@ -17,7 +17,7 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v3
 
-        - name: Send SMS
+        - name: Send Tweet
           run: |
             echo $(pip --version)
             pip install tweepy
