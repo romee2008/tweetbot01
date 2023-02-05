@@ -2,7 +2,8 @@ name: Send Daily SMS
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+  # At 22:00 on every day-of-week from Monday through Friday
+    - cron: '30 17, * * *'
   
 jobs: 
     daily_sms:
